@@ -1,1 +1,22 @@
 // Navigation code here
+.main-nav {
+  background: @nav-bg;
+  padding: 1%;
+  .displayflex(column, center, center);
+}
+.space-title {
+}
+.nav {
+  width: 20%;
+  margin-top: 15px;
+  .displayflex(row, space-between, center);
+  @media @mobile {
+    width: 76%;
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: @nav-font;
+    font-size: 1.6rem;
+  }
+}

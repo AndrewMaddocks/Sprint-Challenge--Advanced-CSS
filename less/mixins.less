@@ -1,1 +1,24 @@
 // Mixins Here
+.displayflex ( @d, @j, @a) {
+  display: flex;
+  flex-direction: @d;
+  justify-content: @j;
+  align-items: @a;
+}
+
+.button(@bc, @c, @txt) {
+  background-color: @bc;
+  color: @c;
+  font-size: 2rem;
+  width: 28%;
+  padding: 6px;
+  text-align: @txt;
+  border-radius: 5px;
+}
+
+.checkborder() {
+  border: 2px solid red;
+}
+.textcenter() {
+  text-align: center;
+}
